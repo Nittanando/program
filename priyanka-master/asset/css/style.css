@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 nav {
   width: 100%;
   display: flex;
@@ -205,9 +212,9 @@ nav {
     position: fixed;
     right: 0;
   }
-  .heightAuto{
-    height: auto!important;
-    min-height: auto!important;
+  .heightAuto {
+    height: auto !important;
+    min-height: auto !important;
   }
   .second-page-left {
     font-size: 15px;
@@ -222,7 +229,7 @@ nav {
 
 .landing-section-kobita {
   height: 70vh;
-  background-image: url(../image/fairy-tale.jpg);
+  background-image: url(../images/fairy-tale.jpg);
   background-attachment: fixed;
   /* background-position: center; */
   background-repeat: no-repeat;
@@ -236,89 +243,90 @@ nav {
   font-size: 80px;
   text-align: center;
 }
-.modal-content{
-  background-image: linear-gradient(140deg, white 50%, black 0)!important;
+.modal-content {
+  background-image: linear-gradient(140deg, white 50%, black 0) !important;
   transition: 0.2s all;
 }
-.pagination-width-custom{
-  width: inherit!important;
+.pagination-width-custom {
+  width: inherit !important;
 }
-.custom-height{
-  min-height: 100vh!important;
+.custom-height {
+  min-height: 100vh !important;
 }
-.col2-padding{
-  padding-right: 10px!important;
+.col2-padding {
+  padding-right: 10px !important;
 }
-.accordion-button{
-  background-color: turquoise!important;
+.accordion-button {
+  background-color: turquoise !important;
 }
-.accordion-body{
-  background-color: cadetblue!important;
+.accordion-body {
+  background-color: cadetblue !important;
 }
-.active{
+.active {
   text-shadow: -5px 5px 25px #200211;
 }
 /*  */
 
-.owl-item{
-  height: 20rem!important;
-  width: 25rem!important;
+.owl-item {
+  height: 20rem !important;
+  width: 25rem !important;
   margin: 5px;
 }
-.owlImage{
+.owlImage {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.owl-dots{
+.owl-dots {
   display: none;
 }
 /*  */
 
-.portfolio-menu{
-	text-align:center;
+.portfolio-menu {
+  text-align: center;
 }
-.portfolio-menu ul li{
-	display:inline-block;
-	margin:0;
-	list-style:none;
-	padding:10px 15px;
-	cursor:pointer;
-	-webkit-transition:all 05s ease;
-	-moz-transition:all 05s ease;
-	-ms-transition:all 05s ease;
-	-o-transition:all 05s ease;
-	transition:all .5s ease;
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all 0.5s ease;
 }
 
 /* gallery */
-.gallery{
+.gallery {
   background-color: rgb(27, 28, 41);
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
-#lightgallery{
+#lightgallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-
 }
-#lightgallery a{
+#lightgallery a {
   height: 200px;
   width: 300px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
 }
-#lightgallery a img{
+#lightgallery a img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: 0.4s all;
 }
-#lightgallery a img:hover{
+#lightgallery a img:hover {
   transform: scale(1.4);
 }
+
+/*  */

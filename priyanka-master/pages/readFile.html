@@ -119,13 +119,62 @@
         transform: translateY(0);
       }
     }
+    .comments {
+      display: flex;
+      flex-direction: column;
+    }
+    .comment-host {
+      display: flex;
+      justify-content: start;
+    }
+    .avatar-icon {
+      height: 30px;
+      width: 30px;
+      background-color: azure;
+      border-radius: 20px;
+      margin: 5px;
+    }
+    .name-title {
+      margin: 0;
+    }
+    .comment-data {
+      margin: 0;
+      margin-left: 2rem;
+    }
+    .comment-reaction-section {
+      margin-left: 2rem;
+    }
+    .comment-reaction-section a {
+      margin: 5px;
+      font-size: 18px;
+    }
+    .input-parent {
+      display: flex;
+      justify-content: space-between;
+    }
+    .read-file-input {
+      height: 40px;
+      width: 48%;
+      font-size: 1rem;
+    }
+    .text-area {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    .post-comment {
+      height: 40px;
+      width: 5rem;
+      font-size: 18px;
+      cursor: pointer;
+    }
   </style>
   <body>
     <div class="container-main">
       <div class="main">
         <section class="section">
           <figure class="image-container">
-            <img src="../image/pri1.jpg" alt="" />
+            <img src="../asset/images/pri1.jpg" alt="" />
           </figure>
           <article class="content">
             <h2 class="section-title">বিরতি</h2>
@@ -164,18 +213,79 @@
               লোকে আমায় যতই বলুক "নিয়তি" !
             </p>
             <hr />
-            <br />
+            <div>
+              <h3>Comments</h3>
+              <div class="comments">
+                <div class="comment-host">
+                  <span class="avatar">
+                    <img
+                      class="avatar-icon"
+                      src="../asset/images/png/user.png"
+                      alt=""
+                    />
+                  </span>
+                  <span class="name"
+                    ><h4 class="name-title">Nittanando Sarkar</h4></span
+                  >
+                </div>
+                <div class="comment-list">
+                  <p class="comment-data">
+                    আমি এই প্রবন্ধে কিছু বলছি যে, আমার প্রতিবন্ধী হলো সারাদেশের
+                    সবচেয়ে বড় কাজের সাথে
+                  </p>
+                  <span class="comment-reaction-section"
+                    ><a href="">Like</a> <a href="">Reply</a></span
+                  >
+                </div>
+              </div>
+              <div class="comments">
+                <div class="comment-host">
+                  <span class="avatar">
+                    <img
+                      class="avatar-icon"
+                      src="../asset/images/png/user.png"
+                      alt=""
+                    />
+                  </span>
+                  <span class="name"
+                    ><h4 class="name-title">Al-Mahmudul Hasan</h4></span
+                  >
+                </div>
+                <div class="comment-list">
+                  <p class="comment-data">
+                    ইউক্রেনকে তিন দিক থেকে ঘিরে ফেলেছে রাশিয়া
+                  </p>
+                  <span class="comment-reaction-section"
+                    ><a href="">Like</a> <a href="">Reply</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <hr />
             <div class="comment-section">
+              <h3>Post a comment</h3>
               <form action="">
-                <input type="text" placeholder="Your Name" />
-                <input type="text" placeholder="Your Mail" />
+                <div class="input-parent">
+                  <input
+                    class="read-file-input"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    class="read-file-input"
+                    type="text"
+                    placeholder="Your Mail"
+                  />
+                </div>
                 <textarea
-                  rows="2"
-                  cols="40"
+                  class="text-area"
+                  rows="4"
+                  cols="50"
                   type="text"
                   placeholder="Your Message"
                 ></textarea>
               </form>
+              <button class="post-comment">Post</button>
             </div>
           </article>
         </section>
