@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+}
+.logo {
+  padding: 15px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-right {
+  min-width: 40%;
+  background-color: turquoise;
+  border-bottom-left-radius: 20px;
+}
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+}
+.nav-li {
+  padding: 25px;
+  list-style: none;
+  font-size: 18px;
+}
+.nav-li a {
+  color: black;
+  text-decoration: none;
+  list-style: none !important;
+  font-weight: 600;
+}
+.side-bar-button,
+.side-bar-close {
+  display: none;
+}
+#nav-right-id {
+  display: block;
+}
+
+/*  */
+.first-page-left {
+  background-image: linear-gradient(140deg, turquoise 70%, #212529 0);
+}
+.priyanka_img {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.landing-title-section {
+  height: 40vh;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-section {
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.social-icon:hover {
+  padding: 2px;
+  transition: 0.4s all;
+}
+.second-page-left {
+  font-size: 22px;
+  padding: 5vw;
+}
+.second-page-right {
+  background-image: linear-gradient(140deg, #212529 31%, turquoise 0);
+}
+.page-third-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-third-right {
+  background-image: linear-gradient(35deg, #212529 27%, turquoise 0);
+  padding: 3rem;
+}
+.s-png {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+.f-weight {
+  font-weight: 600 !important;
+}
+
+/*  */
+
+#owl-demo .item {
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/*  */
+
+.footer-container {
+  background-color: turquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}
+.footer-content-section {
+  height: 80%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-bottom {
+  height: 10%;
+  width: 100%;
+}
+.footer-logo-section {
+  width: 60%;
+}
+.footer-li-section {
+  width: 40%;
+}
+.footer-li-section ul {
+  padding-bottom: 0 !important;
+}
+.footer-li-section ul li {
+  text-align: right;
+  list-style: none;
+}
+.footer-li-section ul li a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  margin: 2px;
+  text-align: right;
+}
+
+@media screen and (max-width: 920px) {
+  nav {
+    align-items: flex-start;
+  }
+  .nav-right {
+    height: 100vh;
+    min-width: 60%;
+    position: relative;
+  }
+  #nav-right-id {
+    display: none;
+  }
+  .nav-ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  .nav-li {
+    padding: 12px;
+  }
+  .side-bar-button {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+  .side-bar-close {
+    display: block;
+    cursor: pointer;
+  }
+  .priyanka_img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-section {
+    position: fixed;
+    right: 0;
+  }
+  .heightAuto{
+    height: auto!important;
+    min-height: auto!important;
+  }
+  .second-page-left {
+    font-size: 15px;
+    padding: 2rem;
+  }
+  .second-page-right {
+    display: none;
+  }
+}
+
+/*  */
+
+.landing-section-kobita {
+  height: 70vh;
+  background-image: url(../image/fairy-tale.jpg);
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kobita-headline {
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+}
+.modal-content{
+  background-image: linear-gradient(140deg, white 50%, black 0)!important;
+  transition: 0.2s all;
+}
+.pagination-width-custom{
+  width: inherit!important;
+}
+.custom-height{
+  min-height: 100vh!important;
+}
+.col2-padding{
+  padding-right: 10px!important;
+}
+.accordion-button{
+  background-color: turquoise!important;
+}
+.accordion-body{
+  background-color: cadetblue!important;
+}
+.active{
+  text-shadow: -5px 5px 25px #200211;
+}
+/*  */
+
+.owl-item{
+  height: 20rem!important;
+  width: 25rem!important;
+  margin: 5px;
+}
+.owlImage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.owl-dots{
+  display: none;
+}
+/*  */
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+/* gallery */
+.gallery{
+  background-color: rgb(27, 28, 41);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#lightgallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+
+}
+#lightgallery a{
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#lightgallery a img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s all;
+}
+#lightgallery a img:hover{
+  transform: scale(1.4);
+}

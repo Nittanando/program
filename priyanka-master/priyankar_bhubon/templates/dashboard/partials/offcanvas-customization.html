@@ -1,0 +1,155 @@
+<form class="offcanvas offcanvas-end" id="offcanvasDemo" tabindex="-1">
+    <div class="offcanvas-body">
+
+        <!-- Close -->
+        <a class="btn-close" href="#" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+
+        <!-- Image -->
+        <div class="text-center">
+            <img src="/static/dashboard/img/illustrations/designer-life.svg" alt="..." class="img-fluid mb-3">
+        </div>
+
+        <!-- Heading -->
+        <h2 class="text-center mb-2">
+            নিজের মতো করে সাজিয়ে নিন
+        </h2>
+
+        <!-- Text -->
+        <p class="text-center mb-4">
+            আপনার লাইভ প্রিভিউ প্রদর্শনের জন্য কুকি করা হবে এমন পছন্দগুলি সেট করুন।
+        </p>
+
+        <!-- Divider -->
+        <hr class="mb-4">
+
+        <!-- Heading -->
+        <h4 class="mb-1">
+            বর্ণবিন্যাস
+        </h4>
+
+        <!-- Text -->
+        <p class="small text-muted mb-3">
+            সামগ্রিক আলো বা অন্ধকার উপস্থাপনা.
+        </p>
+
+        <!-- Button group -->
+        <div class="btn-group-toggle row gx-2 mb-4">
+            <div class="col">
+                <input class="btn-check" name="colorScheme" id="colorSchemeLight" type="radio" value="light">
+                <label class="btn w-100 btn-white" for="colorSchemeLight">
+                    <i class="fe fe-sun me-2"></i> লাইট মোড
+                </label>
+            </div>
+            <div class="col">
+                <input class="btn-check" name="colorScheme" id="colorSchemeDark" type="radio" value="dark">
+                <label class="btn w-100 btn-white" for="colorSchemeDark">
+                    <i class="fe fe-moon me-2"></i> ডার্ক মোড
+                </label>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <h4 class="mb-1">
+            নেভিগেশন অবস্থান
+        </h4>
+
+        <!-- Text -->
+        <p class="small text-muted mb-3">
+            আপনার অ্যাপের জন্য প্রাথমিক নেভিগেশন প্যারাডাইম নির্বাচন করুন।
+        </p>
+
+        <!-- Button group -->
+        <div class="btn-group-toggle row gx-2 mb-4">
+            <div class="col">
+                <input class="btn-check" name="navPosition" id="navPositionSidenav" type="radio" value="sidenav">
+                <label class="btn w-100 btn-white" for="navPositionSidenav">
+                    সাইডবার
+                </label>
+            </div>
+            <div class="col">
+                <input class="btn-check" name="navPosition" id="navPositionTopnav" type="radio" value="topnav">
+                <label class="btn w-100 btn-white" for="navPositionTopnav">
+                    টপবার
+                </label>
+            </div>
+            <div class="col">
+                <input class="btn-check" name="navPosition" id="navPositionCombo" type="radio" value="combo">
+                <label class="btn w-100 btn-white" for="navPositionCombo">
+                    কমবো
+                </label>
+            </div>
+        </div>
+
+        <!-- Collapse -->
+        <div id="sidebarSizeContainer">
+
+            <!-- Heading -->
+            <h4 class="mb-1">
+                সাইডবার সাইজিং
+            </h4>
+
+            <!-- Text -->
+            <p class="small text-muted mb-3">
+                ড্রপডাউন সহ স্ট্যান্ডার্ড নেভিগেশন সাইজিং বা ছোট আইকন।
+            </p>
+
+            <!-- Button group -->
+            <div class="btn-group-toggle row gx-2 mb-4">
+                <div class="col">
+                    <input class="btn-check" name="sidebarSize" id="sidebarSizeBase" type="radio" value="base">
+                    <label class="btn w-100 btn-white" for="sidebarSizeBase">
+                        ফুলসাইজ
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="btn-check" name="sidebarSize" id="sidebarSizeSmall" type="radio" value="small">
+                    <label class="btn w-100 btn-white" for="sidebarSizeSmall">
+                        আইকন
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Heading -->
+        <h4 class="mb-1">
+            নেভিগেশন কালার
+        </h4>
+
+        <!-- Text -->
+        <p class="small text-muted mb-3">
+            সাধারণত রঙের স্কিম দ্বারা নির্দেশিত, কিন্তু ওভাররাইড করা যেতে পারে।
+        </p>
+
+        <!-- Button group -->
+        <div class="btn-group-toggle row gx-2">
+            <div class="col">
+                <input class="btn-check" name="navColor" id="navColorDefault" type="radio" value="default">
+                <label class="btn w-100 btn-white" for="navColorDefault">
+                    ডিফল্ট
+                </label>
+            </div>
+            <div class="col">
+                <input class="btn-check" name="navColor" id="navColorInverted" type="radio" value="inverted">
+                <label class="btn w-100 btn-white" for="navColorInverted">
+                    উল্টানো
+                </label>
+            </div>
+            <div class="col">
+                <input class="btn-check" name="navColor" id="navColorVibrant" type="radio" value="vibrant">
+                <label class="btn w-100 btn-white" for="navColorVibrant">
+                    প্রাণবন্ত
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <div class="offcanvas-header">
+
+        <!-- Button -->
+        <button type="submit" class="btn w-100 btn-primary mt-auto">
+            প্রিভিঊ
+        </button>
+
+    </div>
+</form>

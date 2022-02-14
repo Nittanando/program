@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "img": "../image/owl-image/owl-1.jpg",
+      "alt": "owl-1"
+    },
+    {
+      "img": "../image/owl-image/owl-2.jpg",
+      "alt": "owl-2"
+    },
+    {
+      "img": "../image/owl-image/owl-3.jpg",
+      "alt": "owl-3"
+    },
+    {
+      "img": "../image/owl-image/owl-4.jpg",
+      "alt": "owl-4"
+    },
+    {
+      "img": "../image/owl-image/owl-5.jpg",
+      "alt": "owl-5"
+    },{
+      "img": "../image/owl-image/owl-6.jpg",
+      "alt": "owl-6"
+    }
+  ]
+}

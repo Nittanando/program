@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container-main {
+      --scale: 0.1;
+      --space: 8vmin;
+      --font-primary: "Lato", sans-serif;
+      --font-heading: "Playfair Display", serif;
+    }
+    @media (prefers-reduced-motion) {
+      .container-main {
+        --scale: 0;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: hsl(5, 15%, 5%);
+    }
+
+    .main {
+      color: hsl(0, 0%, 95%);
+      background-color: hsl(5, 15%, 5%);
+      font-size: clamp(1.2rem, 5vw, 1.5rem);
+      font-family: var(--font-primary);
+      line-height: 1.6;
+    }
+    a {
+      color: hsl(65, 80%, 60%);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    .section {
+      transform-origin: center top;
+      transform: scaleY(calc(1 - var(--scale)));
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: bold;
+      line-height: 1.125;
+    }
+
+    .byline {
+      display: block;
+      font-size: 0.6em;
+      margin: calc(var(--space) / 1.35) 0;
+    }
+
+    .content {
+      position: relative;
+      margin: -50vh auto 0;
+      padding: var(--space);
+      max-width: 55ch;
+      width: calc(100% - var(--space));
+      background: hsla(225, 15%, 5%, 0.9);
+    }
+
+    .image-container {
+      position: sticky;
+      top: 0;
+      width: auto;
+      height: 100vh;
+      z-index: -2;
+    }
+
+    .image-container img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-container::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(
+        to bottom,
+        hsla(5, 15%, 5%, 0) 0%,
+        hsla(5, 15%, 5%, 0.013) 8.1%,
+        hsla(5, 15%, 5%, 0.049) 15.5%,
+        hsla(5, 15%, 5%, 0.104) 22.5%,
+        hsla(5, 15%, 5%, 0.175) 29%,
+        hsla(5, 15%, 5%, 0.259) 35.3%,
+        hsla(5, 15%, 5%, 0.352) 41.2%,
+        hsla(5, 15%, 5%, 0.45) 47.1%,
+        hsla(5, 15%, 5%, 0.55) 52.9%,
+        hsla(5, 15%, 5%, 0.648) 58.8%,
+        hsla(5, 15%, 5%, 0.741) 64.7%,
+        hsla(5, 15%, 5%, 0.825) 71%,
+        hsla(5, 15%, 5%, 0.896) 77.5%,
+        hsla(5, 15%, 5%, 0.951) 84.5%,
+        hsla(5, 15%, 5%, 0.987) 91.9%,
+        hsl(5, 15%, 5%) 100%
+      );
+    }
+
+    @keyframes fadein {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <body>
+    <div class="container-main">
+      <div class="main">
+        <section class="section">
+          <figure class="image-container">
+            <img src="../image/pri1.jpg" alt="" />
+          </figure>
+          <article class="content">
+            <h2 class="section-title">বিরতি</h2>
+            <span class="byline"
+              >Content provided by
+              <a href="" target="_blank" rel="noreferrer"
+                >the online dating ipsum generator →</a
+              ></span
+            >
+            <p>
+              কত সহজে ছেড়ে যাবার মাস্টার প্ল্যান আঁকো তুমি । <br />
+              এক জীবনে কষ্ট পুষে ছেড়ে যাবার বিলাসিতা <br />এবার না হয় ঝেড়ে ফেলো
+              । <br />নিয়মের কালচক্রে চারপায়ে ঘুরে ঘুরে সহসা আমরা <br />ছেড়ে
+              যাবার পূর্ণাঙ্গ সংজ্ঞাটা শিখে ফেলবো ।<br />
+              জীবনের সিলেবাস থেকে "সমাপ্তি" নামক টপিকটা <br />তুলে দেয়ার আকস্মিক
+              আন্দোলনে <br />তোমার অস্তিত্বের বামপাশে এসে দাঁড়াব ।
+            </p>
+            <p>
+              সমস্ত দূরত্ব ঘুচিয়ে তোমার হাপিত্যেশের সঙ্গী হবো । <br />ট্যাবু
+              ভাঙার সমস্ত দায় নিজের কাঁধে তুলে <br />তোমার প্রবেশ নিষিদ্ধ
+              গণ্ডির একচ্ছত্র সম্রাজ্ঞী হবো ।<br />
+              ক্ষতরা মিলিয়ে যাবে পরিশীলিত শুদ্ধতার ঊষা-লগ্নে ।
+            </p>
+            <p>
+              ঝরে পড়া পাতাদের মাড়িয়ে যাবার কালে <br />কখনো আর ঘাড় ঘুরিয়ে অতীতে
+              তাকাবেনা ।<br />
+              আহত পাতারা আহত দেয়ালের ক্ষত সারিয়ে <br />আমার মতো অমায়িক সুখে হাসে
+              । <br />যে হাসি তোমার সোঁদা ঘ্রাণের মেঠোপথের বাঁকে <br />আকস্মিক
+              যাত্রা-বিরতির যতি-চিহ্ন । <br />তোমার অবিরাম যাত্রাপথের ইচ্ছাকৃত
+              বিরতি রূপে পথ আগলে দাঁড়াব ।
+            </p>
+            <p>
+              জীবনের সবকটা অর্ধ-খালি জলের গ্লাস <br />পূরণ করার কোন দায় রেখো না
+              । <br />বরং মেনে নাও - <br />তোমার সকল অভিমানের যাত্রাপথে
+              <br />আমিই আজ পূর্ণ বিরতির সুস্থির সম্রাজ্ঞী । <br />ফিসফিসিয়ে
+              লোকে আমায় যতই বলুক "নিয়তি" !
+            </p>
+            <hr />
+            <br />
+            <div class="comment-section">
+              <form action="">
+                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Your Mail" />
+                <textarea
+                  rows="2"
+                  cols="40"
+                  type="text"
+                  placeholder="Your Message"
+                ></textarea>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
