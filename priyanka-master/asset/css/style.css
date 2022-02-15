@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-.smooth-scroll-wrapper {
+/* .smooth-scroll-wrapper {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   overflow: hidden;
-}
+} */
+/* #scrollbar {
+  height: 100vh;
+  overflow: auto;
+} */
 nav {
   width: 100%;
   display: flex;
@@ -90,7 +94,7 @@ nav {
 }
 .second-page-left {
   font-size: 22px;
-  padding: 5vw;
+  padding: 10vw;
 }
 .second-page-right {
   background-image: linear-gradient(140deg, #212529 31%, turquoise 0);
@@ -98,7 +102,7 @@ nav {
 .page-third-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 .page-third-right {
@@ -330,3 +334,47 @@ nav {
 }
 
 /*  */
+
+.pe-card {
+  max-height: 28rem;
+  width: 24rem;
+  margin: 8px;
+  overflow: hidden;
+}
+.pe-card-img-top {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s all;
+  z-index: 0;
+}
+.pe-card-img-top:hover {
+  transform: scale(1.4);
+}
+.pe-card-content-bottom {
+  min-height: 10rem;
+  width: 100%;
+  background-color: turquoise;
+  z-index: 1;
+}
+
+.pe-card2 {
+  height: 20rem;
+  width: 22rem;
+  background: url(../images/priyanka.jpg);
+  background-size: 100% 100%;
+  /* filter: grayscale(2); */
+  filter: saturate(5);
+  /* filter: contrast(200%); */
+  transition: 0.4s all;
+  overflow: hidden;
+  margin: 8px;
+}
+.pe-card2:hover {
+  transform: scale(1.05);
+}
+.about-img {
+  position: relative;
+  top: 22.5%;
+  right: 50%;
+}
