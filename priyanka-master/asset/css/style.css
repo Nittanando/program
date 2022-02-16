@@ -94,7 +94,8 @@ nav {
 }
 .second-page-left {
   font-size: 22px;
-  padding: 10vw;
+  padding-left: 8rem;
+  padding-right: 18rem;
 }
 .second-page-right {
   background-image: linear-gradient(140deg, #212529 31%, turquoise 0);
@@ -361,14 +362,23 @@ nav {
 .pe-card2 {
   height: 20rem;
   width: 22rem;
-  background: url(../images/priyanka.jpg);
+  /* background: url(../images/priyanka.jpg); */
   background-size: 100% 100%;
   /* filter: grayscale(2); */
-  filter: saturate(5);
+  /* filter: saturate(5); */
   /* filter: contrast(200%); */
   transition: 0.4s all;
   overflow: hidden;
   margin: 8px;
+}
+.pe-card2-img {
+  z-index: 0;
+  position: relative;
+  filter: blur(4px);
+}
+.pe-card2-body {
+  position: absolute;
+  z-index: 1;
 }
 .pe-card2:hover {
   transform: scale(1.05);
@@ -377,4 +387,46 @@ nav {
   position: relative;
   top: 22.5%;
   right: 50%;
+}
+.btn-shine {
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  border: none;
+}
+@keyframes shine {
+  0% {
+    background-position: 0px;
+  }
+  /* 50% {
+    background-position: 180px;
+  } */
+  100% {
+    background-position: 180px;
+  }
+}
+
+.category {
+  padding: 5rem;
+}
+.contact-section {
+  width: 100%;
+}
+.contact-img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.tab {
+  display: none;
 }
