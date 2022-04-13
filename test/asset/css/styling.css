@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(31, 29, 29);
+  }
+  .nav-bar__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+  }
+  .nav-bar__container ul {
+    background-color: black;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar__container ul li {
+    color: white;
+    margin: 15px;
+    font-size: 14px;
+  }
+  .nav-bar__bottom {
+    width: -moz-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28282b;
+    /* border: 0.1px solid rgb(102, 90, 90); */
+    box-shadow: 0 0 1px white;
+  }
+  .nav-bar__bottom__content-wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-tamarind__left h2 {
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  .nav-bar__bottom__right ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #28282b;
+  }
+  .nav-bar__bottom__button {
+    width: 5rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 10%;
+  }
+  #container__scene-1 {
+    position: fixed;
+    transition: 0.2s;
+  }
+  
+  .animated {
+    position: absolute;
+    display: none;
+    top: -30px;
+    left: 0;
+    /* background: url(../images/w_scene-1_bg.jpg);
+    background-size: cover; */
+  }
+  
