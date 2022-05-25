@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background: rgb(239, 204, 162);
+  background: radial-gradient(
+    circle,
+    rgba(239, 204, 162, 1) 0%,
+    rgba(3, 0, 51, 1) 70%
+  );
+} */
+body {
+  background-color: rgb(39, 36, 36) !important;
+}
+header {
+  background-color: white !important;
+}
+header .container {
+  height: 10vh;
+}
+.soical-icons img {
+  height: 20ox;
+  width: 20px;
+  margin: 5px;
+}
+.say-hello {
+  margin: 5px;
+  font-weight: bold;
+}
+.home_first-section_left {
+  background-image: url(../image/jpg/old-book.jpg);
+  background-size: 100% 100%;
+  /* filter: contrast(50%); */
+}
+.home_first-section_right {
+  background-image: url(../image/jpg/rainbow.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.home_first-section_right img {
+  /* height: 35rem; */
+  /* width: 25rem; */
+  position: absolute;
+  /* left: -40px;
+  top: 10%; */
+  transform: translate(-20%, 14%);
+}
+.vh_75 {
+  height: 75vh;
+}
