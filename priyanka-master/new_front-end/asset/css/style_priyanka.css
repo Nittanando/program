@@ -1,7 +1,14 @@
+/* font */
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");
+/* font */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 /* body {
   background: rgb(239, 204, 162);
@@ -12,7 +19,12 @@
   );
 } */
 body {
-  background-color: rgb(39, 36, 36) !important;
+  /* background-color: rgb(39, 36, 36) !important; */
+  font-family: "SolaimanLipi", Arial, sans-serif !important;
+}
+a {
+  color: none !important;
+  text-decoration: none !important;
 }
 header {
   background-color: white !important;
@@ -20,7 +32,8 @@ header {
 header .container {
   height: 10vh;
 }
-.soical-icons img {
+.soical-icons img,
+.icons_share_comment {
   height: 20ox;
   width: 20px;
   margin: 5px;
@@ -40,13 +53,105 @@ header .container {
   position: relative;
 }
 .home_first-section_right img {
-  /* height: 35rem; */
-  /* width: 25rem; */
+  height: 55vh;
   position: absolute;
-  /* left: -40px;
-  top: 10%; */
-  transform: translate(-20%, 14%);
+  transform: translate(-20%, 18%);
 }
 .vh_75 {
   height: 75vh;
+}
+.card-btn {
+  min-width: 7rem;
+}
+.card_share_section,
+.card_comment_section {
+  margin-left: 5px;
+}
+.mt_responsive {
+  margin-top: 5rem !important;
+}
+.p-custom {
+  padding: 50px 30px;
+  /* background-color: #f9f9ff; */
+}
+.search_icon_position {
+  position: absolute;
+  right: 35px;
+  top: 55px;
+}
+.ml_custom {
+  margin-left: 1rem;
+}
+.pb_10 {
+  padding-bottom: 10px;
+}
+iframe {
+  width: 100%;
+}
+.footer_img {
+  height: 200px;
+  width: 220px;
+}
+.footer_quote_priyanka {
+  position: absolute;
+  right: 40px;
+  bottom: 75px;
+}
+
+/* owl theme */
+
+.owl-dots {
+  display: none;
+}
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 43%;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 20px;
+  background-color: azure;
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: black;
+  color: azure;
+  border: 1px solid azure;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: black;
+  color: azure;
+  border: 1px solid azure;
+}
+/* owl-carousel */
+
+@media only screen and (max-width: 768px) {
+  .home_first-section_right img {
+    /* transform: none; */
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .ml_custom {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .mt_responsive {
+    margin-top: 10rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mt_responsive {
+    margin-top: 14rem !important;
+  }
+  .card-btn {
+    min-width: 5rem;
+  }
+  .footer_resposive_logo-section {
+    flex-direction: column;
+  }
 }
