@@ -10,21 +10,15 @@
 html {
   scroll-behavior: smooth;
 }
-/* body {
-  background: rgb(239, 204, 162);
-  background: radial-gradient(
-    circle,
-    rgba(239, 204, 162, 1) 0%,
-    rgba(3, 0, 51, 1) 70%
-  );
-} */
 body {
-  /* background-color: rgb(39, 36, 36) !important; */
   font-family: "SolaimanLipi", Arial, sans-serif !important;
 }
 a {
   color: none !important;
   text-decoration: none !important;
+}
+li {
+  list-style: none !important;
 }
 header {
   background-color: white !important;
@@ -34,9 +28,19 @@ header .container {
 }
 .soical-icons img,
 .icons_share_comment {
-  height: 20ox;
+  height: 20px;
   width: 20px;
   margin: 5px;
+}
+.icons_share_comment-2 {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+  transition: 0.4s all;
+}
+.icons_share_comment-2:hover {
+  background-color: skyblue;
+  padding: 5px;
 }
 .say-hello {
   margin: 5px;
@@ -94,8 +98,8 @@ iframe {
 }
 .footer_quote_priyanka {
   position: absolute;
-  right: 40px;
-  bottom: 75px;
+  right: 0;
+  bottom: -15px;
 }
 
 /* owl theme */
@@ -126,12 +130,12 @@ iframe {
   color: azure;
   border: 1px solid azure;
 }
-/* owl-carousel */
+/* owl-theme */
 
 @media only screen and (max-width: 768px) {
   .home_first-section_right img {
-    /* transform: none; */
     position: relative;
+    height: 45vh;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -153,5 +157,94 @@ iframe {
   }
   .footer_resposive_logo-section {
     flex-direction: column;
+  }
+  .jce_responsive {
+    justify-content: flex-start !important;
+  }
+}
+
+/* about-me section */
+
+#myVideo {
+  height: 80vh;
+  width: 100%;
+}
+.carousel-item img {
+  max-height: 70vh;
+}
+.carousel-indicators {
+  visibility: hidden;
+}
+.carousel_btn_custom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+  width: 7rem;
+  height: 4rem;
+  background-color: #f9f9ff;
+}
+.carousel-control-prev-icon {
+  background-image: url(../image/icons/back.png);
+}
+.carousel-control-next-icon {
+  background-image: url(../image/icons/next.png);
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 50%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+}
+.about_img_custom_size {
+  max-height: 100vh;
+}
+.published_book_about_section {
+  /* background-image: url(../image/jpg/old-book.jpg); */
+  /* min-height: 70vh; */
+}
+.pcc_custom {
+  place-content: center !important;
+}
+.c_h_w {
+  height: 22rem;
+  width: 20rem;
+}
+.cutom_icon_about {
+  margin: 0 !important;
+  background-color: white;
+  margin-right: 10px !important;
+  height: 25px !important;
+  width: 25px !important;
+}
+.bg_paper {
+  background-image: url(../image/jpg/paper-bg.jpg);
+  background-size: 100% 100%;
+}
+.txt_justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 1081px) {
+  .row__custom1081 {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .width_column_custom {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_img_custom_size {
+    max-height: auto;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>প্রিয়াংকার ভুবন</title>
+    <title>হোম | প্রিয়াংকার ভুবন</title>
 
     <!-- bangla-font -->
     <link
@@ -35,10 +35,18 @@
     <header>
       <div class="container d-flex align-items-center justify-content-between">
         <div class="soical-icons">
-          <img src="./asset/image/icons/facebook.png" alt="facebook" />
-          <img src="./asset/image/icons/insta.png" alt="instagram" />
-          <img src="./asset/image/icons/twitter.png" alt="twitter" />
-          <img src="./asset/image/icons/youtube.png" alt="youtube" />
+          <a href=""
+            ><img src="./asset/image/icons/facebook.png" alt="facebook"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/insta.png" alt="instagram"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/twitter.png" alt="twitter"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/youtube.png" alt="youtube"
+          /></a>
         </div>
         <div class="logo"><h1 class="text-dark">প্রিয়াংকার ভুবন</h1></div>
         <div class="say-hello text-dark border border-dark p-2">
@@ -68,7 +76,7 @@
               <a class="nav-link active" aria-current="page" href="#">হোম</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">আমার সম্পর্কে</a>
+              <a class="nav-link" href="./pages/about-me.html">আমার সম্পর্কে</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">কবিতা</a>
@@ -484,7 +492,7 @@
                 type="text"
                 placeholder="মেইল"
               />
-              <button class="btn btn-light rounded-0 mt-2">
+              <button class="btn btn-light rounded-0 mt-3">
                 সাবস্ক্রাইব করুন
               </button>
             </form>
@@ -631,25 +639,83 @@
               </div>
             </div>
           </div>
+
+          <div class="card p-custom rounded-0 mt-4 bg-dark">
+            <h5 class="card-title mb-4 text-light">
+              কোনো তথ্যের প্রয়োজনে যোগাযোগ করুন
+            </h5>
+            <form action="">
+              <input
+                class="form-control rounded-0"
+                name="search"
+                type="text"
+                placeholder="মেইল"
+              />
+              <textarea
+                class="w-100 mt-3"
+                name=""
+                id=""
+                rows="3"
+                placeholder="আপনার মেসেজ"
+              ></textarea>
+              <button class="btn btn-light rounded-0 mt-3">সেন্ড করুন</button>
+            </form>
+          </div>
+
+          <div
+            class="card p-custom rounded-0 mt-4 d-flex flex-row justify-content-around"
+          >
+            <a href="">
+              <img
+                class="icons_share_comment-2"
+                src="./asset/image/icons/facebook.png"
+                alt="facebook"
+              />
+            </a>
+            <a href="">
+              <img
+                class="icons_share_comment-2"
+                src="./asset/image/icons/insta.png"
+                alt="instagram"
+              />
+            </a>
+            <a href="">
+              <img
+                class="icons_share_comment-2"
+                src="./asset/image/icons/twitter.png"
+                alt="twitter"
+              />
+            </a>
+            <a href="">
+              <img
+                class="icons_share_comment-2"
+                src="./asset/image/icons/youtube.png"
+                alt="youtube"
+              />
+            </a>
+          </div>
         </div>
 
         <!-- column right -->
       </div>
     </div>
+
+    <!-- footer section -->
+
     <footer class="container-fluid bg-dark p-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <a href=""
               ><h1 class="text-light mb-2 fwt-bold">প্রিয়াংকার ভুবন</h1></a
             >
-            <div class="d-flex position-relative footer_resposive_logo-section">
-              <img
+            <div class="position-relative footer_resposive_logo-section">
+              <!-- <img
                 class="footer_img"
                 src="./asset/image/jpg/pri-footer.jpg"
                 alt="priyanka"
-              />
-              <p class="text-light p-2">
+              /> -->
+              <p class="text-light pt-2">
                 জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী সমস্ত দিনের
                 সতেজতায় মেলে ধরে থাকে নিজেকে দৈনন্দিন জীবন এবং জীবিকার
                 পরিতৃপ্তির আধার হয়ে
@@ -657,11 +723,35 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+
+          <div class="col-md-8 d-flex justify-content-end jce_responsive">
+            <ul>
+              <li><a class="text-light mt-2" href="">আমার সম্পর্কে</a></li>
+              <li><a class="text-light mt-2" href="">কবিতা</a></li>
+              <li><a class="text-light mt-2" href="">গল্প</a></li>
+              <li><a class="text-light mt-2" href="">সাহিত্য রিভিউ</a></li>
+              <li><a class="text-light mt-2" href="">মুভি রিভিউ</a></li>
+              <li><a class="text-light mt-2" href="">গ্যালারি</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-light" />
+        <div class="row">
+          <div class="col-md-6 jce_responsive">
+            <span class="text-light"
+              >কপি রাইট © <a href="#">প্রিয়াংকার ভুবন</a> এর কাছে সমস্ত অধিকার
+              সংরক্ষিত</span
+            >
+          </div>
+          <div class="col-md-6 d-flex justify-content-end jce_responsive">
+            <span class="text-light"
+              ><a href="#">প্রাইভেট আই</a> দ্বারা ডিজাইনকৃত</span
+            >
+          </div>
         </div>
       </div>
     </footer>
+    <!-- footer section -->
 
     <!-- Home-page Landing section -->
 
