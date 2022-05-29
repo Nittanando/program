@@ -208,10 +208,10 @@ iframe {
 .about_img_custom_size {
   max-height: 100vh;
 }
-.published_book_about_section {
-  /* background-image: url(../image/jpg/old-book.jpg); */
-  /* min-height: 70vh; */
-}
+/* .published_book_about_section {
+  background-image: url(../image/jpg/old-book.jpg);
+  min-height: 70vh;
+} */
 .pcc_custom {
   place-content: center !important;
 }
@@ -271,11 +271,11 @@ iframe {
 }
 .vh_50 {
   height: 50vh;
-  background-color: #8b9cad;
+  background-color: #c4cbd1;
 }
 .golpo_position_custom {
   position: relative;
-  top: -15rem;
+  top: -140px;
 }
 .card_share_comment_section {
   display: flex;
@@ -287,6 +287,21 @@ iframe {
 .card_txt_shadow {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 } */
-.p_8rem {
+/* .p_8rem {
   padding: 0.8rem;
+} */
+.golpo__title {
+  font-size: 5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.golpo_bg {
+  background-image: url(../image/bg-icons/stamp.png);
+  background-size: 100% 100%;
+}
+.color_pagination {
+  color: white !important;
+  background-color: black !important;
 }
