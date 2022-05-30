@@ -301,7 +301,15 @@ iframe {
   background-image: url(../image/bg-icons/stamp.png);
   background-size: 100% 100%;
 }
+.gallery_bg {
+  background-image: url(../image/jpg/hand-painted-watercolor.jpg);
+  background-size: 100% 100%;
+}
 .color_pagination {
   color: white !important;
   background-color: black !important;
+}
+.filtr-item {
+  height: 35vh;
+  width: 25rem;
 }
