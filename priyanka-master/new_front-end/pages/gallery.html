@@ -11,27 +11,19 @@
       href="https://fonts.maateen.me/solaiman-lipi/font.css"
       rel="stylesheet"
     />
-    <!-- light gallery css -->
-    <!-- <link
-      rel="stylesheet"
-      href="../asset/plugin/light-gallery/lightgallery.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../asset/plugin/light-gallery/lightgallery-bundle.min.css"
-    /> -->
-    <link
-      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
-      rel="stylesheet"
-    />
 
+    <!-- magnific-popup css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
     <!-- Bootstrap css -->
     <link
       rel="stylesheet"
       href="../asset/plugin/bootstrap-5/css/bootstrap.min.css"
     />
 
-    <!-- custom css link -->
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="../asset/css/style_priyanka.css" />
   </head>
   <body>
@@ -104,277 +96,116 @@
       </div>
     </nav>
     <!-- Navbar section -->
-
     <!-- after-nav-section  -->
     <div class="container-fluid p-0 vh_50 gallery_bg">
       <h1 class="text-dark golpo__title fw-bold">প্রিয়াংকার ফটো গ্যালারি</h1>
     </div>
     <!-- after-nav-section  -->
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons btn btn-outline-dark active" data-filter="all">
+          সব
+        </li>
+        <li class="buttons btn btn-outline-dark" data-filter="family">
+          আমি এবং আমরা
+        </li>
+        <li class="buttons btn btn-outline-dark" data-filter="book">বই</li>
+        <li class="buttons btn btn-outline-dark" data-filter="travel">ভ্রমণ</li>
+        <li class="buttons btn btn-outline-dark" data-filter="food">খাবার</li>
+      </ul>
 
-    <!-- gallery-with-tab-section  -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- image category list -->
-            <ul class="list-inline text-center filter-controls mb-5">
-              <li
-                class="list-inline-item m-3 active btn btn-outline-dark"
-                data-filter="all"
-              >
-                সব
-              </li>
-              <li
-                class="list-inline-item m-3 btn btn-outline-dark"
-                data-filter="family"
-              >
-                আমি এবং আমরা
-              </li>
-              <li
-                class="list-inline-item m-3 btn btn-outline-dark"
-                data-filter="book"
-              >
-                বই
-              </li>
-              <li
-                class="list-inline-item m-3 btn btn-outline-dark"
-                data-filter="travel"
-              >
-                ভ্রমণ
-              </li>
-              <li
-                class="list-inline-item m-3 btn btn-outline-dark"
-                data-filter="food"
-              >
-                খাবার
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- image list -->
-        <div class="row filtr-container">
-          <!-- light-gallery-container -->
+      <div class="image-container">
+        <a href="../asset/image/gallery/pri-family-1.jpg" class="image family">
+          <img src="../asset/image/gallery/pri-family-1.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/pri-book-1.jpg" class="image book">
+          <img src="../asset/image/gallery/pri-book-1.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/travel-1.jpg" class="image travel">
+          <img src="../asset/image/gallery/travel-1.jpg" alt="gallery" />
+        </a>
 
-          <div>
-            <!-- image -->
-            <div
-              id="lightgallery"
-              data-category="family"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/pri-family-1.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-family-1.jpg"
-                  alt="gallery"
-              /></a>
-            </div>
+        <a href="../asset/image/gallery/pri-food-1.jpg" class="image food">
+          <img src="../asset/image/gallery/pri-food-1.jpg" alt="" />
+        </a>
+        <a href="../asset/image/gallery/pri-family-2.jpg" class="image family">
+          <img src="../asset/image/gallery/pri-family-2.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/pri-book-3.jpg" class="image book">
+          <img src="../asset/image/gallery/pri-book-3.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/travel-2.jpg" class="image travel">
+          <img src="../asset/image/gallery/travel-2.jpg" alt="gallery" />
+        </a>
 
-            <!-- image -->
-            <div
-              id="lightgallery"
-              data-category="book"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/pri-book-1.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-book-1.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div>
-            <!-- image -->
-            <div
-              id="lightgallery"
-              data-category="travel"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/travel-1.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/travel-1.jpg"
-                  alt="gallery"
-              /></a>
-            </div>
+        <a href="../asset/image/gallery/pri-food-2.jpg" class="image food">
+          <img src="../asset/image/gallery/pri-food-2.jpg" alt="" />
+        </a>
+        <a href="../asset/image/gallery/pri-family-3.jpg" class="image family">
+          <img src="../asset/image/gallery/pri-family-3.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/pri-book-4.jpg" class="image book">
+          <img src="../asset/image/gallery/pri-book-4.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/travel-3.jpg" class="image travel">
+          <img src="../asset/image/gallery/travel-3.jpg" alt="gallery" />
+        </a>
 
-            <!-- image -->
-            <div
-              id="lightgallery"
-              data-category="food"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/pri-food-1.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-food-1.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div>
-            <!-- image -->
-            <!-- <div
-              data-category="family"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/pri-family-3.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-family-3.jpg"
-                  alt="gallery"
-              /></a>
-            </div> -->
+        <a href="../asset/image/gallery/pri-food-3.jpg" class="image food">
+          <img src="../asset/image/gallery/pri-food-3.jpg" alt="" />
+        </a>
+        <a href="../asset/image/gallery/pri-family-4.jpg" class="image family">
+          <img src="../asset/image/gallery/pri-family-4.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/pri-book-5.jpg" class="image book">
+          <img src="../asset/image/gallery/pri-book-5.jpg" alt="gallery" />
+        </a>
+        <a href="../asset/image/gallery/travel-4.jpg" class="image travel">
+          <img src="../asset/image/gallery/travel-4.jpg" alt="gallery" />
+        </a>
 
-            <!-- image -->
-            <!-- <div data-category="book" class="col-lg-4 col-sm-6 mb-5 filtr-item">
-              <a
-                href="../asset/image/gallery/pri-book-3.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-book-3.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div> -->
-            <!-- image -->
-            <!-- <div
-              data-category="travel"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/travel-3.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/travel-3.jpg"
-                  alt="gallery"
-              /></a>
-            </div> -->
-
-            <!-- image -->
-            <!-- <div data-category="food" class="col-lg-4 col-sm-6 mb-5 filtr-item">
-              <a
-                href="../asset/image/gallery/pri-food-3.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-food-3.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div> -->
-            <!-- image -->
-            <!-- <div
-              data-category="family"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/pri-family-2.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-family-2.jpg"
-                  alt="gallery"
-              /></a>
-            </div> -->
-
-            <!-- image -->
-            <!-- <div data-category="book" class="col-lg-4 col-sm-6 mb-5 filtr-item">
-              <a
-                href="../asset/image/gallery/pri-book-2.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-book-2.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div> -->
-            <!-- image -->
-            <!-- <div
-              data-category="travel"
-              class="col-lg-4 col-sm-6 mb-5 filtr-item"
-            >
-              <a
-                href="../asset/image/gallery/travel-2.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/travel-2.jpg"
-                  alt="gallery"
-              /></a>
-            </div> -->
-
-            <!-- image -->
-            <!-- <div data-category="food" class="col-lg-4 col-sm-6 mb-5 filtr-item">
-              <a
-                href="../asset/image/gallery/pri-food-2.jpg"
-                class="card border-0 rounded-0 m-2"
-              >
-                <img
-                  class="rounded-0 img-thumbnail"
-                  src="../asset/image/gallery/pri-food-2.jpg"
-                  alt="gallery"
-                />
-              </a>
-            </div> -->
-            <!-- image -->
-          </div>
-        </div>
+        <a href="../asset/image/gallery/pri-food-4.jpg" class="image food">
+          <img src="../asset/image/gallery/pri-food-4.jpg" alt="" />
+        </a>
       </div>
-    </section>
+    </div>
 
-    <!-- gallery-with-tab-section  -->
-
-    <!-- jquery  -->
+    <!-- jquery cdn link  -->
     <script src="../asset/plugin/jquery/jquery-3.6.0.min.js"></script>
-    <!-- jquery-filterizer  -->
-    <script src="../asset/plugin/jquery/jquery.filterizr.min.js"></script>
 
-    <!-- bootstrap script -->
-    <script src="../asset/plugin/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <!-- light gallery scripts  -->
-    <!-- <script src="../asset/plugin/light-gallery/lightgallery.es5.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-fullscreen.es5.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-autoplay.es5.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-pager.es5.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-share.min.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-hash.es5.js"></script>
-    <script src="../asset/plugin/light-gallery/lg-zoom.es5.js"></script> -->
-    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- <script>
-      lightGallery(document.getElementById("lightgallery"));
+      $(document).ready(function () {
+        $(".buttons").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var filter = $(this).attr("data-filter");
+
+          if (filter == "all") {
+            $(".image").show(400);
+          } else {
+            $(".image")
+              .not("." + filter)
+              .hide(200);
+            $(".image")
+              .filter("." + filter)
+              .show(400);
+          }
+        });
+
+        $(".gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
     </script> -->
-    <!-- vanilla js  -->
     <script src="../asset/js/script.js"></script>
+    <!-- bootstrap script -->
+    <script src="../asset/plugin/bootstrap-5/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

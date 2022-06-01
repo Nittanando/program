@@ -309,7 +309,49 @@ iframe {
   color: white !important;
   background-color: black !important;
 }
-.filtr-item {
-  height: 35vh;
-  width: 25rem;
+
+.gallery {
+  min-height: 100vh;
+  background: #eee;
+  padding-bottom: 100px;
+}
+
+.gallery .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.gallery .controls .buttons {
+  margin: 20px;
+}
+
+.gallery .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.gallery .image-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s cubic-bezier(0.34, 1.12, 0.68, 1.31);
+}
+
+.gallery .image-container .image:hover img {
+  transform: scale(1.4);
 }
