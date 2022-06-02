@@ -285,7 +285,15 @@ iframe {
   transform: translate(-50%, -50%);
 }
 .golpo_bg {
-  background-image: url(../image/bg-icons/stamp.png);
+  background-image: url(../image/jpg/book-bg-pri.jpg);
+  background-size: 100% 100%;
+}
+.sahityo_bg {
+  background-image: url(../image/jpg/sahityo_bg.jpg);
+  background-size: 100% 100%;
+}
+.kobita_bg {
+  background-image: url(../image/bg-icons/torn-paper.png);
   background-size: 100% 100%;
 }
 .gallery_bg {
